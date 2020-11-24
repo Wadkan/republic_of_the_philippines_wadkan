@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4240671-b768-48dc-938a-824eafb9fa9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/LearningStep.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/LearningStep.php" afterDir="false" />
     </list>
@@ -72,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606130628185</updated>
-      <workItem from="1606130630893" duration="19436000" />
+      <workItem from="1606130630893" duration="21855000" />
     </task>
     <servers />
   </component>
@@ -124,9 +125,14 @@
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
     <state width="1294" height="290" key="GridCell.Tab.0.right/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606218524155" />
-    <state x="516" y="392" key="NewPhpFileDialog" timestamp="1606143540570">
-      <screen x="0" y="23" width="1394" height="877" />
+    <state x="375" y="-796" key="NewPhpClassDialog" timestamp="1606233278237">
+      <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
+    <state x="375" y="-796" key="NewPhpClassDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606233278237" />
+    <state x="491" y="-612" key="NewPhpFileDialog" timestamp="1606232322086">
+      <screen x="-220" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="491" y="-612" key="NewPhpFileDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606232322086" />
     <state x="516" y="392" key="NewPhpFileDialog/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606143540570" />
     <state x="53" y="-964" key="SettingsEditor" timestamp="1606217976705">
       <screen x="-220" y="-1057" width="1920" height="1057" />

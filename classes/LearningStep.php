@@ -1,11 +1,5 @@
 <?php
 
-class Obj
-{
-}
-
-;
-
 class LearningStep
 {
     function get_pdo()
@@ -108,8 +102,23 @@ class LearningStep
         $stmt->execute([$id]);
     }
 
+    function list_learning_steps()
+    {
+        $pdo = $this->get_pdo();
+        $sql = 'SELECT * FROM learning_step
+                ORDER BY is_learned, step';
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
 }
 
+var_dump(LearningStep::get_instance()->list_learning_steps());
+
+
+/*
+ * CALL FUNCTIONS
+ */
 
 function add_new()
 {
@@ -181,4 +190,4 @@ working_update();
 not_working_update();
 
 
-LearningStep::get_instance()->delete(16);
+//LearningStep::get_instance()->delete(16);
