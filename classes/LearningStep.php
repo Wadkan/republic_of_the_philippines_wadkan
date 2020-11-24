@@ -100,33 +100,15 @@ class LearningStep
         $stmt->execute(['id' => $id, 'topic' => $topic, 'is_learned' => $is_learned, 'step' => $step, 'created' => $created, 'last_updated' => $last_updated]);
     }
 
+    function delete(int $id): void
+    {
+        $pdo = $this->get_pdo();
+        $sql = 'DELETE FROM learning_step WHERE id = ?';
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([$id]);
+    }
+
 }
-
-
-function not_working()
-{
-    $id = 2;
-    $values['topic'] = 'update_';
-    $values['is_learned'] = 0;
-    $values['step'] = 10;
-    $values['created'] = '2020-01-01 11:11:11';
-    $values['last_updated'] = '2020-01-01 11:11:11';
-    LearningStep::get_instance()->update($id, $values);
-}
-
-function working()
-{
-    $id = 5;
-    $topic = 'updated';
-    $is_learned = 0;
-    $step = 1;
-    $created = '2020-01-01 11:11:11';
-    $last_updated = '2020-01-01 11:11:11';
-    LearningStep::get_instance()->update2($id, $topic, $is_learned, $step, $created, $last_updated);
-}
-
-//not_working();
-working();
 
 
 function add_new()
@@ -173,3 +155,30 @@ function print_all_rows(): void
 
 //print_all_rows();
 
+function not_working_update()
+{
+    $id = 2;
+    $values['topic'] = 'update_';
+    $values['is_learned'] = 0;
+    $values['step'] = 10;
+    $values['created'] = '2020-01-01 11:11:11';
+    $values['last_updated'] = '2020-01-01 11:11:11';
+    LearningStep::get_instance()->update($id, $values);
+}
+
+function working_update()
+{
+    $id = 5;
+    $topic = 'updated';
+    $is_learned = 0;
+    $step = 1;
+    $created = '2020-01-01 11:11:11';
+    $last_updated = '2020-01-01 11:11:11';
+    LearningStep::get_instance()->update2($id, $topic, $is_learned, $step, $created, $last_updated);
+}
+
+working_update();
+not_working_update();
+
+
+LearningStep::get_instance()->delete(16);
