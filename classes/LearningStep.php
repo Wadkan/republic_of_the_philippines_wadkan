@@ -72,7 +72,61 @@ class LearningStep
         return $stmt->fetchAll();
     }
 
+    function update(int $id, array $values): void
+    {
+        $pdo = $this->get_pdo();
+        $sql = 'UPDATE learning_step
+                SET topic = :topic,
+                is_learned = :is_learned,
+                step = :step,
+                created = :created,
+                last_updated = :last_updated        
+                WHERE id = ?';
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute = (['topic' => $values['topic'], 'is_learned' => $values['is_learned'], 'step' => $values['step'], 'created' => $values['created'], 'last_updated' => $values['last_updated']]);
+    }
+
+    function update2($id, $topic, $is_learned, $step, $created, $last_updated): void
+    {
+        $pdo = $this->get_pdo();
+        $sql = 'UPDATE learning_step
+                SET topic = :topic,
+                is_learned = :is_learned,
+                step = :step,
+                created = :created,
+                last_updated = :last_updated        
+                WHERE id = :id';
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(['id' => $id, 'topic' => $topic, 'is_learned' => $is_learned, 'step' => $step, 'created' => $created, 'last_updated' => $last_updated]);
+    }
+
 }
+
+
+function not_working()
+{
+    $id = 2;
+    $values['topic'] = 'update_';
+    $values['is_learned'] = 0;
+    $values['step'] = 10;
+    $values['created'] = '2020-01-01 11:11:11';
+    $values['last_updated'] = '2020-01-01 11:11:11';
+    LearningStep::get_instance()->update($id, $values);
+}
+
+function working()
+{
+    $id = 5;
+    $topic = 'updated';
+    $is_learned = 0;
+    $step = 1;
+    $created = '2020-01-01 11:11:11';
+    $last_updated = '2020-01-01 11:11:11';
+    LearningStep::get_instance()->update2($id, $topic, $is_learned, $step, $created, $last_updated);
+}
+
+//not_working();
+working();
 
 
 function add_new()
@@ -117,5 +171,5 @@ function print_all_rows(): void
     }
 }
 
-print_all_rows();
+//print_all_rows();
 
