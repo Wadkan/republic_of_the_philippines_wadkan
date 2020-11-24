@@ -14,7 +14,8 @@ class LearningStep
         return new PDO($dsn, $user, $password);
     }
 
-    static function get_instance() : LearningStep{
+    static function get_instance(): LearningStep
+    {
         return new LearningStep();
     }
 
@@ -34,38 +35,38 @@ class LearningStep
         $sql = 'SELECT ID FROM learning_step ORDER BY id DESC LIMIT 1 ;';
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
-        return $stmt->fetchAll();
+        return $stmt->fetch();
     }
 
     function save($array_values): int
     {
         $pdo = $this->get_pdo();
-//        $sql = 'INSERT INTO learning_step (id, topic, is_learned, step, created, last_updated)
-//            VALUES (?, ?, ?, ?, ?, ?)';
-        $sql = 'INSERT INTO learning_step (id)
-            VALUES (?)';
+        $sql = 'INSERT INTO learning_step (id, topic, is_learned, step, created, last_updated)
+            VALUES (:id, :topic, :is_learned, :step, :created, :last_updated)';
         $stmt = $pdo->prepare($sql);
-//        $stmt->execute([$array_values['id'], $array_values['topic'], $array_values['is_learned'], $array_values['step'], $array_values['created'], $array_values['last_updated'], $array_values['topic'], $array_values['is_learned'], $array_values['step'], $array_values['created'], $array_values['last_updated']]);
-        $stmt->execute([$array_values['id']]);
-        return 0;
+        $stmt->execute(['id' => $array_values['id'], 'topic' => $array_values['topic'], 'is_learned' => $array_values['is_learned'], 'step' => $array_values['step'], 'created' => $array_values['created'], 'last_updated' => $array_values['last_updated']]);
+
+        if (!$stmt) {
+            echo "\nPDO::errorInfo():\n";
+            print_r($pdo->errorInfo());
+        }
+
+        return $this->get_last_id()['ID'];
     }
 }
 
 
 function add_new()
 {
-    $next_id = LearningStep::get_instance()->get_last_id()[0]['ID'] + 1;
-    echo "------->". $next_id;
+    $next_id = LearningStep::get_instance()->get_last_id()['ID'] + 1;
     $array_values['id'] = $next_id;
-    $array_values['topic'] = 'helllllllllo';
+    $array_values['topic'] = 'asdf';
     $array_values['is_learned'] = TRUE;
     $array_values['step'] = 999;
     $array_values['created'] = "2020-11-11 10:10:10";
     $array_values['last_updated'] = "2020-11-11 10:10:10";
 
-    $l_inst = new LearningStep();
-    $save_inst = $l_inst->save($array_values);
-    echo $save_inst;
+    echo LearningStep::get_instance()->save($array_values);
 }
 
 echo add_new();
