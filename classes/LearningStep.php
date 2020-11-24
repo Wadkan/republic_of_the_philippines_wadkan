@@ -54,13 +54,22 @@ class LearningStep
         return $this->get_last_id()['ID'];
     }
 
-    function find(int $id)
+    function find(int $id): object
     {
         $pdo = $this->get_pdo();
         $sql = 'SELECT * FROM learning_step WHERE id = :id';
         $stmt = $pdo->prepare($sql);
         $stmt->execute(['id' => $id]);
-        return $stmt->fetch();
+        return $stmt->fetchObject();
+    }
+
+    function all(): object
+    {
+        $pdo = $this->get_pdo();
+        $sql = 'SELECT * FROM learning_step';
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchObject();
     }
 
 }
@@ -96,3 +105,7 @@ function find_one()
 }
 
 find_one();
+
+//$all = LearningStep::get_instance()->all();
+//var_dump($all);
+
