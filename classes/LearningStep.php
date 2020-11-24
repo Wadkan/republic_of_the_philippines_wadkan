@@ -1,5 +1,11 @@
 <?php
 
+class Obj
+{
+}
+
+;
+
 class LearningStep
 {
     function get_pdo()
@@ -38,7 +44,7 @@ class LearningStep
         return $stmt->fetch();
     }
 
-    function save($values): int
+    function save(array $values): int
     {
         $pdo = $this->get_pdo();
         $sql = 'INSERT INTO learning_step (id, topic, is_learned, step, created, last_updated)
@@ -46,6 +52,15 @@ class LearningStep
         $stmt = $pdo->prepare($sql);
         $stmt->execute(['id' => $values['id'], 'topic' => $values['topic'], 'is_learned' => $values['is_learned'], 'step' => $values['step'], 'created' => $values['created'], 'last_updated' => $values['last_updated']]);
         return $this->get_last_id()['ID'];
+    }
+
+    function find(int $id)
+    {
+        $pdo = $this->get_pdo();
+        $sql = 'SELECT * FROM learning_step WHERE id = :id';
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(['id' => $id]);
+        return $stmt->fetch();
     }
 
 }
@@ -64,4 +79,20 @@ function add_new()
     echo LearningStep::get_instance()->save($values);
 }
 
-echo add_new();
+//echo add_new();
+
+function find_one()
+{
+    $id_ = 133;
+    $find_one = LearningStep::get_instance()->find($id_);
+    if ($find_one) {
+        foreach ($find_one as $k => $v) {
+            echo $k . "--> " . $v . '<br>';
+        }
+    } else {
+        echo 'No result for ' . $id_ . '.';
+    }
+
+}
+
+find_one();
