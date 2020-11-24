@@ -63,13 +63,13 @@ class LearningStep
         return $stmt->fetchObject();
     }
 
-    function all(): object
+    function all(): array
     {
         $pdo = $this->get_pdo();
         $sql = 'SELECT * FROM learning_step';
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
-        return $stmt->fetchObject();
+        return $stmt->fetchAll();
     }
 
 }
@@ -104,8 +104,18 @@ function find_one()
 
 }
 
-find_one();
+//find_one();
 
-//$all = LearningStep::get_instance()->all();
-//var_dump($all);
+function print_all_rows(): void
+{
+    $all = LearningStep::get_instance()->all();
+    foreach ($all as $row) {
+        foreach ($row as $k => $v) {
+            echo $k . " -> " . $v;
+        }
+        echo '<br>';
+    }
+}
+
+print_all_rows();
 
