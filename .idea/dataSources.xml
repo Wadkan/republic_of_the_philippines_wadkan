@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="MySQL - pdoposts@localhost" uuid="2e5ccdcb-4e8f-4eea-856e-2f9c4161af96">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/pdoposts</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="intro_to_php@localhost" uuid="4ca54fe4-22bc-4f8a-811a-5e17baff03f3">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/intro_to_php</jdbc-url>
+    </data-source>
+  </component>
+</project>

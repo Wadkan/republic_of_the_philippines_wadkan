@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f4240671-b768-48dc-938a-824eafb9fa9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/classes/LearningStep.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="413baf7e-eeb5-49e7-8924-813d08bd3097" name="test" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1kgmUmud1G2DBPscqSabYhAigE2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="test_php" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="test">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4240671-b768-48dc-938a-824eafb9fa9a" name="Default Changelist" comment="" />
+      <created>1606130628185</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606130628185</updated>
+      <workItem from="1606130630893" duration="10780000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="527" y="191" key="#PHP" timestamp="1606144777026">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="527" y="191" key="#PHP/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606144777026" />
+    <state x="146" y="-692" key="#SQL_Dialects" timestamp="1606215499134">
+      <screen x="-220" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="146" y="-692" key="#SQL_Dialects/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606215499134" />
+    <state x="321" y="138" key="#Servers" timestamp="1606205519793">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="321" y="138" key="#Servers/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606205519793" />
+    <state x="340" y="-863" width="1071" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606215267666">
+      <screen x="-220" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="340" y="-863" key="#com.intellij.execution.impl.EditConfigurationsDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606215267666" />
+    <state x="198" y="107" width="1071" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606205536725" />
+    <state width="1294" height="290" key="GridCell.Tab.0.bottom" timestamp="1606217808728">
+      <screen x="-220" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1294" height="290" key="GridCell.Tab.0.bottom/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606217808728" />
+    <state width="1294" height="290" key="GridCell.Tab.0.center" timestamp="1606217808727">
+      <screen x="-220" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1294" height="290" key="GridCell.Tab.0.center/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606217808727" />
+    <state width="1294" height="290" key="GridCell.Tab.0.left" timestamp="1606217808726">
+      <screen x="-220" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1294" height="290" key="GridCell.Tab.0.left/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606217808726" />
+    <state width="1294" height="290" key="GridCell.Tab.0.right" timestamp="1606217808727">
+      <screen x="-220" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1294" height="290" key="GridCell.Tab.0.right/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606217808727" />
+    <state x="516" y="392" key="NewPhpFileDialog" timestamp="1606143540570">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="516" y="392" key="NewPhpFileDialog/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606143540570" />
+    <state x="53" y="-964" key="SettingsEditor" timestamp="1606217976705">
+      <screen x="-220" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="53" y="-964" key="SettingsEditor/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606217976705" />
+    <state x="198" y="100" key="SettingsEditor/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606143757965" />
+    <state x="285" y="123" key="com.intellij.database.dbimport.ImportDialog" timestamp="1606139984462">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="285" y="123" key="com.intellij.database.dbimport.ImportDialog/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606139984462" />
+    <state x="435" y="273" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1606139979929">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="435" y="273" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606139979929" />
+    <state x="386" y="190" width="644" height="510" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1606143228255">
+      <screen x="0" y="23" width="1394" height="877" />
+    </state>
+    <state x="589" y="-748" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606139900246" />
+    <state x="386" y="190" width="644" height="510" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606143228255" />
+  </component>
+</project>
