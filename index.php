@@ -1,7 +1,6 @@
 <?php
-
-require __DIR__ . '/classes/LearningStep.php';
-
+//namespace db_handler;
+include __DIR__ . '/classes/LearningStep.php';
 $learning_steps_list = LearningStep::get_instance()->list_learning_steps();
 $headers = ['id', 'topic', 'is_learned', 'step', 'created', 'last_updated'];
 

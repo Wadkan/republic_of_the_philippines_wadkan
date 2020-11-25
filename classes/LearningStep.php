@@ -1,4 +1,6 @@
 <?php
+// TODO: does not work with namespace
+//namespace db_handler;
 
 class LearningStep
 {
@@ -10,15 +12,22 @@ class LearningStep
         $dbname = 'intro_to_php';
 
         // Set DSN data source name
-        $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
-        return new PDO($dsn, $user, $password);
+        $connection = null;
+        try {
+            $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
+            $connection = new PDO($dsn, $user, $password);
+            $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            echo "Connected successfully<br>";
+        } catch (PDOException $e) {
+            echo "Connection failed: " . $e->getMessage() . '<br>';
+        }
+        return $connection;
     }
 
     static function get_instance(): LearningStep
     {
         return new LearningStep();
     }
-
 
     function select_all()
     {
@@ -110,6 +119,20 @@ class LearningStep
         $stmt->execute();
         return $stmt->fetchAll();
     }
+
+    function add($topic, $is_learned, $step, $created, $last_updated): void
+    {
+        $pdo = $this->get_pdo();
+        $sql = 'INSERT INTO learning_step';
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        echo $topic;
+        echo $is_learned;
+        echo $step;
+        echo $created;
+        echo $last_updated;
+    }
 }
 
 
@@ -121,16 +144,19 @@ function add_new()
 {
     $next_id = LearningStep::get_instance()->get_last_id()['ID'] + 1;
     $values['id'] = $next_id;
-    $values['topic'] = 'alma';
+    $values['topic'] = 'apple';
     $values['is_learned'] = TRUE;
     $values['step'] = 999;
     $values['created'] = "2020-11-11 10:10:10";
     $values['last_updated'] = "2020-11-11 10:10:10";
-
-    echo LearningStep::get_instance()->save($values);
+    try {
+        echo LearningStep::get_instance()->save($values);
+    } catch (PDOException $e) {
+        echo "Error in SQL: " . $e->getMessage();
+    }
 }
 
-//echo add_new();
+echo add_new();
 
 function find_one()
 {

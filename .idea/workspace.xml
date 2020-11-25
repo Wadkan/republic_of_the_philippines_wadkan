@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4240671-b768-48dc-938a-824eafb9fa9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add_learning_step.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/LearningStep.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/LearningStep.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
@@ -31,6 +33,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,6 +62,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -73,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606130628185</updated>
-      <workItem from="1606130630893" duration="24187000" />
+      <workItem from="1606130630893" duration="27430000" />
     </task>
     <servers />
   </component>
@@ -129,10 +139,10 @@
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
     <state x="375" y="-796" key="NewPhpClassDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606233278237" />
-    <state x="491" y="-612" key="NewPhpFileDialog" timestamp="1606232322086">
+    <state x="491" y="-612" key="NewPhpFileDialog" timestamp="1606290155242">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="491" y="-612" key="NewPhpFileDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606232322086" />
+    <state x="491" y="-612" key="NewPhpFileDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606290155242" />
     <state x="516" y="392" key="NewPhpFileDialog/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606143540570" />
     <state x="53" y="-964" key="SettingsEditor" timestamp="1606217976705">
       <screen x="-220" y="-1057" width="1920" height="1057" />
@@ -152,10 +162,10 @@
     </state>
     <state x="589" y="-748" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606139900246" />
     <state x="386" y="190" width="644" height="510" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606143228255" />
-    <state x="447" y="-896" width="586" height="735" key="find.popup" timestamp="1606221826380">
+    <state x="447" y="-896" width="879" height="735" key="find.popup" timestamp="1606292449284">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="447" y="-896" width="586" height="735" key="find.popup/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606221826380" />
+    <state x="447" y="-896" width="879" height="735" key="find.popup/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606292449284" />
     <state x="405" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1606223994571">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
