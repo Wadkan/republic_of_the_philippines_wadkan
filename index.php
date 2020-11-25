@@ -1,6 +1,10 @@
 <?php
 //namespace db_handler;
 include __DIR__ . '/classes/LearningStep.php';
+
+echo '<a href=add.html>Add new record</a>';
+echo '<br><br>';
+
 $learning_steps_list = LearningStep::get_instance()->list_learning_steps();
 $headers = ['id', 'topic', 'is_learned', 'step', 'created', 'last_updated'];
 
