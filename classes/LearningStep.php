@@ -109,6 +109,7 @@ class LearningStep
         $sql = 'DELETE FROM learning_step WHERE id = ?';
         $stmt = $pdo->prepare($sql);
         $stmt->execute([$id]);
+        echo $id . ' has removed successfully.';
     }
 
     function list_learning_steps()
@@ -134,10 +135,21 @@ class LearningStep
         } catch (PDOException $e) {
             echo "Error in SQL: " . $e->getMessage();
         }
-
     }
 
-
+    function set_as_learnt(int $id): void
+    {
+        try {
+            $pdo = $this->get_pdo();
+            $sql = 'UPDATE learning_step SET is_learned = TRUE WHERE id = ?';
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute([$id]);
+            $last_id = $pdo->lastInsertId();
+            echo 'Entry with ' . $last_id . ' id updated to learnt.';
+        } catch (PDOException $e) {
+            echo "Error in SQL: " . $e->getMessage();
+        }
+    }
 }
 
 
