@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4240671-b768-48dc-938a-824eafb9fa9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add_learning_step.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ca54fe4-22bc-4f8a-811a-5e17baff03f3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4ca54fe4-22bc-4f8a-811a-5e17baff03f3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/LearningStep.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/LearningStep.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606130628185</updated>
-      <workItem from="1606130630893" duration="27430000" />
+      <workItem from="1606130630893" duration="28432000" />
     </task>
     <servers />
   </component>
@@ -135,6 +133,10 @@
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
     <state width="1294" height="290" key="GridCell.Tab.0.right/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606218524155" />
+    <state width="243" height="457" key="HiddenNamespacesPopup" timestamp="1606298849435">
+      <screen x="-220" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="243" height="457" key="HiddenNamespacesPopup/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606298849435" />
     <state x="375" y="-796" key="NewPhpClassDialog" timestamp="1606233278237">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
@@ -157,15 +159,15 @@
       <screen x="0" y="23" width="1394" height="877" />
     </state>
     <state x="435" y="273" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606139979929" />
-    <state x="386" y="190" width="644" height="510" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1606143228255">
-      <screen x="0" y="23" width="1394" height="877" />
-    </state>
-    <state x="589" y="-748" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606139900246" />
-    <state x="386" y="190" width="644" height="510" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606143228255" />
-    <state x="447" y="-896" width="879" height="735" key="find.popup" timestamp="1606292449284">
+    <state x="589" y="-748" width="644" height="510" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1606298868343">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="447" y="-896" width="879" height="735" key="find.popup/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606292449284" />
+    <state x="589" y="-748" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606298868343" />
+    <state x="386" y="190" width="644" height="510" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-220.-1057.1920.1057/0.23.1394.877@0.23.1394.877" timestamp="1606143228255" />
+    <state x="447" y="-896" width="879" height="735" key="find.popup" timestamp="1606299199401">
+      <screen x="-220" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="447" y="-896" width="879" height="735" key="find.popup/-220.-1057.1920.1057/0.23.1394.877@-220.-1057.1920.1057" timestamp="1606299199401" />
     <state x="405" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1606223994571">
       <screen x="-220" y="-1057" width="1920" height="1057" />
     </state>

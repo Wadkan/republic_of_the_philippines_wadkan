@@ -122,17 +122,22 @@ class LearningStep
 
     function add($topic, $is_learned, $step, $created, $last_updated): void
     {
-        $pdo = $this->get_pdo();
-        $sql = 'INSERT INTO learning_step';
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute();
+        try {
+            $pdo = $this->get_pdo();
+            $sql = 'INSERT INTO learning_step (topic, is_learned, step, created, last_updated)
+                    VALUES (:topic, :is_learned, :step, :created, :last_updated)';
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute(['topic' => $topic, 'is_learned' => $is_learned, 'step' => $step, 'created' => $created, 'last_updated' => $last_updated]);
+            $last_id = $pdo->lastInsertId();
+            echo 'The last id is: ' . $last_id . '.';
 
-        echo $topic;
-        echo $is_learned;
-        echo $step;
-        echo $created;
-        echo $last_updated;
+        } catch (PDOException $e) {
+            echo "Error in SQL: " . $e->getMessage();
+        }
+
     }
+
+
 }
 
 
@@ -156,7 +161,7 @@ function add_new()
     }
 }
 
-echo add_new();
+//echo add_new();
 
 function find_one()
 {
