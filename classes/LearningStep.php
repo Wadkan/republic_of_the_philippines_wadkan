@@ -105,15 +105,12 @@ class LearningStep
     function list_learning_steps()
     {
         $pdo = $this->get_pdo();
-        $sql = 'SELECT * FROM learning_step
-                ORDER BY is_learned, step';
+        $sql = 'SELECT * FROM learning_step';
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll();
     }
 }
-
-var_dump(LearningStep::get_instance()->list_learning_steps());
 
 
 /*
@@ -141,10 +138,10 @@ function find_one()
     $find_one = LearningStep::get_instance()->find($id_);
     if ($find_one) {
         foreach ($find_one as $k => $v) {
-            echo $k . "--> " . $v . '<br>';
+            echo $k . "--> " . $v . ' < br>';
         }
     } else {
-        echo 'No result for ' . $id_ . '.';
+        echo 'No result for ' . $id_ . ' . ';
     }
 
 }
@@ -158,7 +155,7 @@ function print_all_rows(): void
         foreach ($row as $k => $v) {
             echo $k . " -> " . $v;
         }
-        echo '<br>';
+        echo ' < br>';
     }
 }
 
@@ -170,8 +167,8 @@ function not_working_update()
     $values['topic'] = 'update_';
     $values['is_learned'] = 0;
     $values['step'] = 10;
-    $values['created'] = '2020-01-01 11:11:11';
-    $values['last_updated'] = '2020-01-01 11:11:11';
+    $values['created'] = '2020 - 01 - 01 11:11:11';
+    $values['last_updated'] = '2020 - 01 - 01 11:11:11';
     LearningStep::get_instance()->update($id, $values);
 }
 
@@ -181,13 +178,15 @@ function working_update()
     $topic = 'updated';
     $is_learned = 0;
     $step = 1;
-    $created = '2020-01-01 11:11:11';
-    $last_updated = '2020-01-01 11:11:11';
+    $created = '2020 - 01 - 01 11:11:11';
+    $last_updated = '2020 - 01 - 01 11:11:11';
     LearningStep::get_instance()->update2($id, $topic, $is_learned, $step, $created, $last_updated);
 }
 
-working_update();
-not_working_update();
+//working_update();
+//not_working_update();
 
 
 //LearningStep::get_instance()->delete(16);
+
+// LearningStep::get_instance()->list_learning_steps();
